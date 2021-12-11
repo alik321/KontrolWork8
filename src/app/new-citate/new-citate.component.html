@@ -1,0 +1,21 @@
+<form (ngSubmit)="sendCitate()">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Author</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="name" [(ngModel)]="author">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1" name="citate" [(ngModel)]='citate'>
+      <option>motivation</option>
+      <option>saying</option>
+      <option>famous people</option>
+      <option>humour</option>
+      <option>star wars</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput2">Text</label>
+    <input type="text" class="form-control" id="exampleFormControlInput2" name="text" [(ngModel)]="text">
+  </div>
+    <button type="submit" class="btn btn-primary">создать</button>
+</form>

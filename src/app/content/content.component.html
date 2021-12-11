@@ -1,0 +1,12 @@
+<div class="card" *ngFor="let citate of citates; let i = index" style="margin-bottom: 10px;">
+  <div class="card-header">
+    {{citate.citate}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Author: {{citate.author}}</h5>
+    <p class="card-text">Citate: {{citate.text}}</p>
+    <a href="" class="btn btn-success">изменить</a>&nbsp;
+    <button class="btn btn-danger" type="button" (click)="toDelete(i)">удалить</button>
+  </div>
+</div>
+
